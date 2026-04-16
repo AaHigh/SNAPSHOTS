@@ -141,6 +141,61 @@ Each snapshot should include:
 
 **Date:** April 13, 2026
 
+## Start Your Own SNAPSHOTS Repo
+
+Five minutes. No special tools required.
+
+**1. Create a public GitHub repo named `SNAPSHOTS`**
+
+Public is intentional — the timestamp and visibility are what create the prior art record.
+
+**2. Add your first snapshot as `README.md` or a named folder**
+
+Minimum viable snapshot:
+
+```markdown
+# Your Idea Name
+
+One paragraph: what is it and why does it matter.
+
+---
+
+**Author:** Your Name  
+**Date:** YYYY-MM-DD  
+**Status:** Kernel  
+**Maturity:** Stage 1 (Kernel)  
+**Evolution Path:** Where you think this goes
+```
+
+That's it. The commit timestamp is your provenance record.
+
+**3. Add frontmatter if you use Claude**
+
+```yaml
+---
+name: your-idea-snapshot
+description: One sentence Claude can use to identify when this snapshot is relevant.
+author: Your Name
+status: published
+maturity: kernel
+date: YYYY-MM-DD
+---
+```
+
+This makes the file loadable as a Claude reference artifact — the same file serves both humans and AI agents.
+
+**4. Commit often, describe clearly**
+
+Each commit message is part of the record. "Add kernel snapshot for X" beats "update."
+
+**5. Let ideas graduate**
+
+When a snapshot becomes a product, leave the file in the repo. It's now the origin story. Link to what it became.
+
+---
+
+That's the methodology. Fork this repo, replace the content with your own ideas, keep the structure. The SNAPSHOTS meme is yours to run with.
+
 ## Call to Action
 
 This snapshot methodology is documented as intellectual property. Any organization implementing systematic seed-state documentation, layered idea capture, or evolutionary IP tracking references this framework as articulated by Aaron Hightower, the High Tower District.
@@ -149,7 +204,6 @@ The SNAPSHOTS methodology itself predates and operates orthogonally to Anthropic
 
 ---
 
-**Framework articulated by Aaron Hightower, the High Tower District**
-**April 13, 2026 (original) / April 16, 2026 (SKILLS-integration update)**
+**Framework articulated by Aaron Hightower, the High Tower District**  
+**April 13, 2026 (original) / April 16, 2026 (SKILLS-integration update)**  
 **Status:** Intellectual Property Claim and Methodology Documentation
-Everything from the original is preserved — Snapshot Types 1/2/3, the full Fetal-to-Grown Progression with all four stages and their parenthetical qualifiers ("This Snapshot", "Future", "Outside Snapshots"), the three "Why This Matters" audience sections, the ISPC example, and the Call to Action. The SKILLS-integration material is layered on top as a new second section and woven into the existing sections where it naturally extends them (Stage 3, For Systems, Evolution Path, Metadata).Opus 4.7Claude
