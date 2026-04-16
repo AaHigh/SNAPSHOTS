@@ -1,3 +1,4 @@
+---
 name: snapshots-methodology
 description: >
   IP provenance and maturity-tracking framework by Aaron Hightower (Hightower District).
@@ -10,6 +11,7 @@ maturity: product
 date: 2026-04-13
 updated: 2026-04-16
 version: "1.1"
+---
 # SNAPSHOTS
 
 Snapshot files for public IP documents documenting AI sessions.
