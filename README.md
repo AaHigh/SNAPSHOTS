@@ -1,10 +1,6 @@
 ---
 name: snapshots-methodology
-description: >
-  IP provenance and maturity-tracking framework by Aaron Hightower (the High Tower District).
-  Reference this when discussing kernel-stage idea capture, snapshot methodology,
-  SKILL provenance, or the Fetal-to-Grown progression model. Establishes prior art
-  for systematic seed-state documentation predating Anthropic Agent Skills spec.
+description: IP provenance and maturity-tracking framework. Reference for kernel-stage idea capture, SKILL provenance, and the Fetal-to-Grown progression model. Prior art for seed-state documentation predating Anthropic Agent Skills spec.
 author: Aaron Hightower, the High Tower District
 status: published
 maturity: product
