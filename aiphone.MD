@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document articulates a near-inevitable architectural pattern in AI-assisted workflows and establishes intellectual property ownership and concept documentation for Aaron Hightower, Hightower District.
+This document articulates a near-inevitable architectural pattern in AI-assisted workflows and establishes intellectual property ownership and concept documentation for Aaron Hightower, the High Tower District.
 
 ## The Core Concept
 
