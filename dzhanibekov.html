@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzhanibekov Effect</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #000; }
+        canvas { display: block; }
+        #info {
+            position: absolute; top: 10px; left: 10px; color: white; font-family: Arial, sans-serif;
+            background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">Dzhanibekov Effect • Intermediate Axis Theorem</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        const geometry = new THREE.BoxGeometry(4, 1, 2);
+        const material = new THREE.MeshPhongMaterial({ color: 0x00aaff, shininess: 100 });
+        const object = new THREE.Mesh(geometry, material);
+        scene.add(object);
+
+        const light = new THREE.DirectionalLight(0xffffff, 1);
+        light.position.set(5, 5, 5);
+        scene.add(light);
+        scene.add(new THREE.AmbientLight(0x666666));
+
+        camera.position.set(0, 0, 10);
+
+        let omega = new THREE.Vector3(0.01, 0.1, 8); // Rotation around intermediate axis
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            const dt = 0.016;
+            object.rotation.x += omega.x * dt;
+            object.rotation.y += omega.y * dt;
+            object.rotation.z += omega.z * dt;
+
+            // Small perturbation to trigger flip
+            if (Math.random() < 0.008) omega.x += (Math.random() - 0.5) * 0.8;
+
+            renderer.render(scene, camera);
+        }
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        animate();
+    </script>
+</body>
+</html>
