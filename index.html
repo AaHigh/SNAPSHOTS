@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAPSHOTS • Public IP Documents for AI Sessions | AaHigh</title>
+    <meta name="description" content="Snapshot files serving as public IP provenance and maturity-tracking artifacts for AI sessions and agent systems. Kernel-stage ideas, evolution tracking from Kernel → Developed → Product → Company. By AaHigh.">
+    <meta name="author" content="AaHigh">
+    <meta name="keywords" content="SNAPSHOTS, AI snapshots, IP provenance, AI agents, kernel ideas, maturity tracking, public IP documents, prior art, Anthropic Agent Skills, AI session documentation">
+
+    <!-- Open Graph / Facebook / LinkedIn / Discord -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/AaHigh/SNAPSHOTS">
+    <meta property="og:title" content="SNAPSHOTS • Public IP Documents for AI Sessions">
+    <meta property="og:description" content="Snapshot files for IP provenance and maturity tracking of AI ideas and agent systems. Documenting kernel-stage concepts with dates, attribution, and evolution paths.">
+    <meta property="og:image" content="og-image.jpg">
+    <meta property="og:image:width" content="1176">
+    <meta property="og:image:height" content="784">
+    <meta property="og:image:alt" content="SNAPSHOTS banner - Public IP Documents for AI Sessions by AaHigh">
+    <meta property="og:site_name" content="AaHigh SNAPSHOTS">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@_aahigh">
+    <meta name="twitter:creator" content="@_aahigh">
+    <meta name="twitter:url" content="https://github.com/AaHigh/SNAPSHOTS">
+    <meta name="twitter:title" content="SNAPSHOTS • Public IP Documents for AI Sessions">
+    <meta name="twitter:description" content="Snapshot files serving as IP provenance and maturity-tracking artifacts for ideas related to AI sessions and agent systems. By AaHigh.">
+    <meta name="twitter:image" content="og-image.jpg">
+    <meta name="twitter:image:alt" content="SNAPSHOTS - AI IP Provenance Repository">
+
+    <!-- Canonical & Redirect (fallback) -->
+    <link rel="canonical" href="https://github.com/AaHigh/SNAPSHOTS">
+    <meta http-equiv="refresh" content="4; url=https://github.com/AaHigh/SNAPSHOTS">
+
+    <!-- Tailwind CSS via CDN for clean modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        :root {
+            --accent: #14b8a6;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .font-display {
+            font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+
+        .tech-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+        }
+
+        .snapshot-card {
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                       box-shadow 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+
+        .snapshot-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 
+                       0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .redirect-text {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 tech-gradient min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-3xl w-full">
+        <!-- Header / Brand -->
+        <div class="flex items-center justify-between mb-8">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-teal-500 rounded-xl flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-display text-2xl font-semibold tracking-tighter">SNAPSHOTS</span>
+                    <span class="ml-1.5 text-xs px-2 py-0.5 bg-slate-800 text-teal-400 rounded-full align-middle">by AaHigh</span>
+                </div>
+            </div>
+            
+            <a href="https://github.com/AaHigh/SNAPSHOTS" 
+               class="hidden sm:flex items-center gap-x-2 px-4 py-2 text-sm font-medium bg-slate-900 hover:bg-slate-800 border border-slate-700 rounded-2xl transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span>GitHub</span>
+            </a>
+        </div>
+
+        <!-- Hero Banner -->
+        <div class="relative mb-8 rounded-3xl overflow-hidden shadow-2xl border border-slate-800 snapshot-card">
+            <img src="og-image.jpg" 
+                 alt="SNAPSHOTS - Public IP Documents for AI Sessions by AaHigh" 
+                 class="w-full h-auto object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/40"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="text-center max-w-2xl mx-auto">
+            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-slate-900 border border-slate-700 rounded-2xl mb-4">
+                <div class="w-2 h-2 bg-teal-400 rounded-full animate-pulse"></div>
+                <span class="text-sm font-medium text-teal-400">Public IP Provenance Repository</span>
+            </div>
+
+            <h1 class="font-display text-5xl sm:text-6xl font-semibold tracking-tighter mb-4">
+                SNAPSHOTS
+            </h1>
+            
+            <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+                Snapshot files documenting AI sessions as <span class="font-medium text-white">intellectual property provenance</span> and maturity-tracking artifacts. 
+                Capturing kernel-stage ideas and their evolution.
+            </p>
+
+            <!-- Key highlights -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-10 text-left">
+                <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-4">
+                    <div class="text-teal-400 text-xs font-mono tracking-[1px] mb-1">MATURITY MODEL</div>
+                    <div class="font-medium">Kernel → Developed → Product → Company</div>
+                </div>
+                <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-4">
+                    <div class="text-teal-400 text-xs font-mono tracking-[1px] mb-1">PURPOSE</div>
+                    <div class="font-medium">Prior art • Attribution • Evolution tracking for AI agents</div>
+                </div>
+                <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-4">
+                    <div class="text-teal-400 text-xs font-mono tracking-[1px] mb-1">FORMAT</div>
+                    <div class="font-medium">Markdown + YAML frontmatter • Human + Machine readable</div>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://github.com/AaHigh/SNAPSHOTS" 
+                   class="group inline-flex items-center justify-center gap-x-3 w-full sm:w-auto px-8 py-4 bg-white text-slate-950 font-semibold rounded-2xl hover:bg-teal-50 active:bg-white transition-all text-lg shadow-xl shadow-teal-950/50">
+                    View Repository on GitHub
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7m-4-7h11" />
+                    </svg>
+                </a>
+                
+                <button onclick="window.location.href='https://github.com/AaHigh/SNAPSHOTS'" 
+                        class="inline-flex items-center justify-center gap-x-2 w-full sm:w-auto px-6 py-4 text-slate-300 hover:text-white font-medium border border-slate-700 hover:border-slate-600 rounded-2xl transition-colors">
+                    <span>or explore the snapshots</span>
+                </button>
+            </div>
+
+            <!-- Redirect status -->
+            <div class="mt-8 flex items-center justify-center gap-x-2 text-sm text-slate-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                <span class="redirect-text">Redirecting to GitHub in <span id="countdown">4</span> seconds...</span>
+            </div>
+        </div>
+
+        <!-- Footer note -->
+        <div class="mt-12 text-center">
+            <p class="text-xs text-slate-500">
+                This page automatically redirects to the official SNAPSHOTS repository.<br>
+                Share this link for rich social previews powered by Open Graph.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#14b8a6');
+        }
+        
+        function startRedirectCountdown() {
+            let seconds = 4;
+            const countdownEl = document.getElementById('countdown');
+            if (!countdownEl) return;
+            
+            const interval = setInterval(() => {
+                seconds--;
+                countdownEl.textContent = seconds;
+                if (seconds <= 0) {
+                    clearInterval(interval);
+                    window.location.href = 'https://github.com/AaHigh/SNAPSHOTS';
+                }
+            }, 1000);
+        }
+        
+        function setupKeyboardShortcuts() {
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    if (document.activeElement.tagName === 'BUTTON' || document.activeElement.tagName === 'A') return;
+                    e.preventDefault();
+                    window.location.href = 'https://github.com/AaHigh/SNAPSHOTS';
+                }
+                if (e.key.toLowerCase() === 'g' && (e.metaKey || e.ctrlKey)) {
+                    e.preventDefault();
+                    window.location.href = 'https://github.com/AaHigh/SNAPSHOTS';
+                }
+            });
+            
+            document.addEventListener('keypress', function(e) {
+                if (e.key === '?') {
+                    window.location.href = 'https://github.com/AaHigh/SNAPSHOTS#readme';
+                }
+            });
+        }
+        
+        function init() {
+            initializeTailwind();
+            startRedirectCountdown();
+            setupKeyboardShortcuts();
+            
+            const link = document.createElement('link');
+            link.rel = 'prefetch';
+            link.href = 'https://github.com/AaHigh/SNAPSHOTS';
+            document.head.appendChild(link);
+        }
+        
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    </script>
+</body>
+</html>
