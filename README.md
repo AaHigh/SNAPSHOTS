@@ -10,7 +10,7 @@ version: "1.1"
 ---
 # SNAPSHOTS
 
-[ebt.ahightower.com](ebt.ahightower.com)
+ebt.ahightower.com (this file ... after redirect)<br>
 Snapshot files for public IP documents documenting AI sessions.
 
 ## Relationship to Agent Skills
